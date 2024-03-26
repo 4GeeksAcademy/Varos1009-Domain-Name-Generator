@@ -15,14 +15,10 @@ window.onload = function() {
   for (let i = 0; i < pronoun.length; i++) {
     for (let x = 0; x < adj.length; x++) {
       for (let y = 0; y < noun.length; y++) {
-        str =
-          pronoun[Math.round(Math.random())] +
-          adj[Math.round(Math.random())] +
-          noun[Math.round(Math.random())] +
-          ".com";
+        str = pronoun[i] + adj[x] + noun[y] + ".com";
+        console.log(str);
       }
     }
   }
   document.getElementById("generator").innerHTML = str;
-  console.log(str);
 };
